@@ -11,10 +11,8 @@
     <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
 
       <div class="diary-loop">
-      <h2>Diary entries loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
   {% for blog in blog.blogs %}
-    <h3><a href="{{ blog.slug }}.html" target="_data">{{ blog.headline }}</a></h3>
+    <h3><a href="blog/{{ blog.slug }}.html">{{ blog.headline }}</a></h3>
     <p>{{ blog.date }}</p>
     <hr>
   {% endfor %}
